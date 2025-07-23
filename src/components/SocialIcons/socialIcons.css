@@ -1,0 +1,33 @@
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  width: 14rem;
+}
+
+.social-icon {
+  color: #90c248;
+  transition: color 0.3s ease;
+}
+
+.social-icon.linkedin:hover {
+  color: #0e76a8;
+}
+
+.social-icon.whatsapp:hover {
+  color: #25d366;
+}
+
+.social-icon.email:hover {
+  color: #e63946;
+}
+
+.social-icon.github:hover {
+  color: #000000;
+}
+
+.social-icon.instagram:hover {
+  color: #e1306c;
+}

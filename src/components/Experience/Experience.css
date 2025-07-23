@@ -1,0 +1,97 @@
+ .experience-container {
+   padding: 3.5rem 1rem;
+   max-width: 1600px;
+   margin: 0 auto;
+ }
+
+ .section-title {
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 3rem;
+   color: white;
+ }
+
+ .experience-entry {
+   position: relative;
+   margin-left: 2rem;
+   margin-bottom: 4rem;
+   padding-left: 2rem;
+ }
+
+ .experience-entry::before {
+   content: "";
+   position: absolute;
+   left: -10px;
+   width: 20px;
+   height: 20px;
+   background-color: rgb(30, 30, 30);
+   border: 3px solid #90c248;
+   border-radius: 50%;
+ }
+
+ .experience-left {
+   margin-bottom: 3rem;
+ }
+
+ .position {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: white;
+ }
+
+ .company {
+   font-size: 1rem;
+   margin-top: 0.25rem;
+   color: white;
+ }
+
+ .company a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .location,
+ .date {
+   font-size: 0.9rem;
+   display: flex;
+   align-items: center;
+   margin-top: 4px;
+   color: white;
+ }
+
+ .location svg,
+ .date svg {
+   margin-right: 6px;
+ }
+
+
+ .responsibilities {
+   list-style-type: disc;
+   padding-left: 3rem;
+ }
+
+ .responsibilities li {
+   margin-bottom: 0.5rem;
+   font-size: 1rem;
+   color: white;
+ }
+
+ .responsibilities b {
+   color: white;
+ }
+
+ @media (min-width: 768px) {
+   .experience-container {
+     padding: 6rem 2rem;
+   }
+
+   .section-title {
+     font-size: 3rem;
+   }
+
+   .experience-entry {
+     margin-left: 3rem;
+     padding-left: 2.5rem;
+   }
+ }

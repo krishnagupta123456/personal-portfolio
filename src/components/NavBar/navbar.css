@@ -1,0 +1,184 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.dark.scrolled {
+  background-color: black;
+}
+
+.navbar-container {
+  height: 6rem;
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 91rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  height: 5rem;
+  width: auto;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+html.dark .nav-link {
+  color: #f0f0f0;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.667);
+}
+
+.nav-link.active {
+  color: #90c248;
+  font-weight: bold;
+}
+
+.toggle-theme {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  margin-left: 1rem;
+  color: inherit;
+}
+
+.nav-mobile-toggle {
+  display: none;
+}
+
+.nav-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(35, 35, 35);
+  padding: 1.5rem;
+}
+
+html.dark .nav-mobile-menu {
+  background-color: white;
+}
+
+.nav-mobile-menu .nav-link {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    background: none;
+    border: none;
+    color: white;
+  }
+
+  .hamburger-icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 91rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.contact-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2;
+  margin-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-heading {
+    font-size: 40px;
+  }
+}
+
+.section-about {
+  background-color: rgb(32, 32, 32);
+}
+
+.section-projects {
+  background-color: rgb(32, 32, 32);
+}
+
+.footer {
+  background-color: #2a2a2a;
+}
+
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-contact-section {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footer-contact-heading {
+    margin-right: 2rem;
+  }
+}
+
+.footer-contact-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+html.dark .footer-contact-heading {
+  color: #f0f0f0;
+}
+
+@media (max-width: 1024px) {
+  .footer-contact-section {
+    align-items: center;
+    text-align: center;
+  }
+}

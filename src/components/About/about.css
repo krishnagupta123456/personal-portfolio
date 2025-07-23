@@ -1,0 +1,158 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  padding: 4rem 1rem;
+  width: 100%;
+  max-width: 86.2rem;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+  }
+}
+
+.about-left,
+.about-right {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+
+  .about-left,
+  .about-right {
+    width: 50%;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -0.75rem;
+  color: white;
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: white;
+}
+
+.section-text p {
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #90c248;
+}
+
+.education {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.education h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.education h4 {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #d4d4d8;
+}
+
+.social-icons {
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.skills-columns {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.skill-group {
+  width: 100%;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.skill-group ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  color: #f1f5f9;
+}
+
+.skill-group li {
+  margin-bottom: 0.5rem;
+}
+
+.github-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.github-header {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-card p {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.github-link {
+  font-size: 0.875rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  color: #90c248;
+}
