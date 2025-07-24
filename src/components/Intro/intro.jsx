@@ -13,8 +13,8 @@ const Intro = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Krishna-Gupta-Resumes.pdf";
-    link.download = "Krishna-Gupta-Resumes.pdf";
+    link.href = "/Krishna_Gupta_Resumes.pdf";
+    link.download = "Krishna_Gupta_Resumes.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
